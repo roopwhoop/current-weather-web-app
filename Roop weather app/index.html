@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roop Weather Web App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="locationInput" placeholder="Enter a location or ZIP code">
+            <button id="geolocationBtn">Get Weather by Geolocation</button>
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+        <div id="weatherInfo"></div>
+        <div class="unit-toggle">
+            <label for="unitSelect">Select Unit:</label>
+            <select id="unitSelect">
+                <option value="metric">Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+        <div id="errorMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
